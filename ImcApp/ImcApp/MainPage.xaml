@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImcApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <StackLayout>
+                <Label Text="Peso de la persona en kilogramos:" FontSize="Body" />
+                <Entry FontSize="Medium" x:Name="PesoEntry" />
+
+
+
+
+                <Label Text="Estatura de la persona en metros:" FontSize="Body"/>
+
+                <Entry  FontSize="Medium" x:Name="EstaturaEntry"/>
+
+
+                
+            </StackLayout>
+
+        </Frame>
+
+        <StackLayout Orientation="Horizontal" Padding="4" HorizontalOptions="CenterAndExpand">
+
+            <Button Text="Calcular" x:Name="CalcularButton" Clicked="calcularButton_Clicked" FontSize="Body" WidthRequest="130"/>
+            <Button Text="Limpiar" x:Name="LimpiarButton" Clicked="LimpiarButton_Clicked"  FontSize="Body" WidthRequest="130"/>
+
+        </StackLayout>
+
+        <Frame Margin="8" CornerRadius="0" BorderColor="LightGray">
+            <StackLayout>
+                <Label Text="El índice de masa corporal de la persona es:"  FontSize="Body" HorizontalOptions="Center"/>
+
+
+                <Label Text="23.4567" x:Name="ImcLabel" HorizontalOptions="Center" FontSize="28" />
+
+
+                <Label  Text="La situación nutricional de la persona es:" x:Name="SituacionNutricionalLabel" FontSize="Body"/>
+
+
+                <Label  Text="Peso normal" HorizontalOptions="Center" FontSize="28"/>
+
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
